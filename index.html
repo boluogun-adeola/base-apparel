@@ -11,47 +11,40 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
  
   <section class="main ">
-    <div class="logo background">
-      <img src="images/logo.svg" alt="company logo"/>
-    </div>
+    <section class="header">
+      <div class="logo background">
+        <img src="images/logo.svg" alt="company logo"/>
+      </div>
+    </section>
     <section class="homepage">
       <div class="text flex background">
         <h1><span> WE'RE</span> COMING SOON</h1>
         <p>Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
-        <form class="form" id="form" action="">
-          <input type="text" placeholder="Email Address" id="email">
+        <form class="form" id="form" >
+          <input for="email" type="text" placeholder="Email Address" id="email" name="email">
           <img src="images/icon-error.svg" alt="" class="error-icon">
-          <button><img src="images/icon-arrow.svg" alt="" srcset=""></button>
+          <button name="button"><img src="images/icon-arrow.svg" alt="icon" ></button>
           <small id="small">Error</small>
         </form>
       </div>
       <div class="image flex desktop">
-        <img src="images/hero-desktop.jpg"/>
+        <img src="images/hero-desktop.jpg" alt="desktop-background"/>
       </div>
       <div class="image flex mobile">
-        <img src="images/hero-mobile.jpg"/>
+        <img src="images/hero-mobile.jpg" alt="mobile-background"/>
       </div>
 
     </section>
   </section>
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+
 
   
 
