@@ -35,6 +35,7 @@ body{
 }
 .mobile{
   display:none;
+
 }
 .text{
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
@@ -135,12 +136,19 @@ span{
 .form.error #small{
   visibility: visible;
 }
+.form.success #small{
+  visibility:visible;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media only screen and (max-width:800px){
   .homepage{
     flex-direction:column-reverse;
+  }
+  .image{
+    width:100%;
   }
   .image img{
     margin-top:4px;
@@ -161,8 +169,7 @@ span{
   }
   .text h1{
     font-size: 2.5em;
-    text-align:center;
-    padding-left: 0.7em;
+    width:100%;
     
   }
   .text p{
@@ -208,7 +215,7 @@ span{
 }
 @media only screen and (min-width:501px) and (max-width:800px){
   .text h1{
-    padding-left:5.5em;
+    padding-left:1.8em;
   
   }
   .text p{
@@ -225,4 +232,12 @@ span{
     font-size:0.9em;
   }
 
+}
+@media only screen and (max-width:450px){
+  .text h1{
+    padding-left:1.5em;
+    text-align:center;
+    width:80%;
+    font-size:1.5em;
+  }
 }

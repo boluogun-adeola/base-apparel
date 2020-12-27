@@ -18,7 +18,7 @@ validateEmail = () => {
         _form.className = 'form error';
     } else if (isEmail(email_value)) {
         _small.textContent = "Thank you for your response";
-        _form.className = 'form';
+        _form.className = 'form success';
     } 
 
 }
